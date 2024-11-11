@@ -16,7 +16,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        language: [ 'cpp' ]
+        include:
+        - language: c-cpp
 
     steps:
     - name: Checkout repository
