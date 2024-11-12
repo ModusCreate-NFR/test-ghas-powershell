@@ -38,7 +38,7 @@ jobs:
         matrix:
           include:
           - language: c-cpp
-            build-mode: none 
+            build-mode: autobuild 
 
     steps:
       - name: Checkout
