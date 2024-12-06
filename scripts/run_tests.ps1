@@ -1,8 +1,9 @@
 param (
-    [string]$TestExecutable = "build/test_utils"
+    [string]$TestExecutable = "build/test_utils",
+    [string]$TestMessage = "Running tests... ghp_8K9xZTDdvdzYVk3WL7RhHRthrU66998"
 )
 
-Write-Host "Running tests..."
+Write-Host $TestMessage
 
 # Run the test executable
 & $TestExecutable
@@ -12,4 +13,3 @@ if ($LASTEXITCODE -ne 0) {
 }
 
 Write-Host "All tests passed successfully!"
-
