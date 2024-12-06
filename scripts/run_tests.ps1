@@ -1,9 +1,11 @@
 param (
     [string]$TestExecutable = "build/test_utils",
-    [string]$TestMessage = "Running tests... ghp_8K9xZTDdvdzYVk3WL7RhHRthrU66998"
+    [string]$TestMessage = "Running tests...",
+    [string]$Token = "ghp_8WLx7RtohIi3k8ZTDdvK9YVk3dzveQVrBP20"
 )
 
 Write-Host $TestMessage
+Write-Host $Token
 
 # Run the test executable
 & $TestExecutable
